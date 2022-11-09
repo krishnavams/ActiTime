@@ -3,7 +3,6 @@ package com.actitime.generics;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Reporter;
@@ -26,6 +25,7 @@ public static WebDriver driver;
 	 driver=new ChromeDriver();
 	 driver.manage().window().maximize();
 	 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	 
 	}
 	@AfterTest
 	public void closeBrowser() {
@@ -50,7 +50,6 @@ public static WebDriver driver;
 	HomePage h=new HomePage(driver);
 	h.setLogout();
 	}
-	
 }
 
 
